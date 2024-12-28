@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeover Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subdomain Takeover Test</h1>
+    <p>This page is hosted on:</p>
+    <h2 id="hostname"></h2>
+    <p class="warning">If you are seeing this page, it might indicate a subdomain takeover vulnerability.</p>
+    <p>Please inform the domain owner about this potential security issue.</p>
+
+    <script>
+        // Display the hostname to confirm where this page is being served
+        document.getElementById('hostname').innerText = window.location.hostname;
+    </script>
+</body>
+</html>
